@@ -1,6 +1,19 @@
+#%% [markdown]
+# ## TWICE 트윗 🤖
+# ### 트와이스의 트윗을 모아주는 봇입니다.
 #
-# Twice 트윗 
+# ### 참고 사이트
+#  
+# - [개발 환경 만들기](https://github.com/moabogey/docs/wiki/개발환경만들기)
 #
+# - [예제 코드 실행](https://github.com/moabogey/docs/wiki/예제코드실행)
+#
+# - [코딩을 하기 전에](https://github.com/moabogey/docs/wiki/코딩하기전에)
+#
+# - [예제 코드 분석](https://github.com/moabogey/docs/wiki/예제코드분석)
+#
+# - [봇 개발 하기](https://github.com/moabogey/docs/wiki/봇개발하기)
+
 #%%
 import requests
 from requests.exceptions import HTTPError
@@ -24,7 +37,7 @@ subject_name = 'JYPETWICE'
 # 사이트 주소
 site_url = 'https://twitter.com/JYPETWICE'
 if __debug__:
-    print('{} 데이터 수집 중...'.format(site_url))
+    print('{} 데이터 수집 중... ⚙️'.format(site_url))
 
 # 사이트의 HTML을 가져온다.
 try:
@@ -161,7 +174,7 @@ else:
                             # 디버그를 위해서 수집한 데이터를 출력한다.
                             temp_data = db_data.copy()
                             temp_data['desc'] = temp_data['desc'][:20] + '...'
-                            print('collected json data: ')
+                            print('📀 수집한 json data: ')
                             print(json.dumps(temp_data, indent=4, ensure_ascii=False, default=str))
 
                         # 수집한 데이터를 데이터베이스에 전송한다.
