@@ -1,6 +1,8 @@
 #%% [markdown]
 # ## TWICE 트윗 🤖
-# ### 트와이스의 트윗을 모아주는 봇입니다.
+#
+# 트와이스의 트윗을 모아주는 봇입니다.
+#
 #
 # ### 참고 사이트
 #  
@@ -13,6 +15,9 @@
 # - [예제 코드 분석](https://github.com/moabogey/docs/wiki/예제코드분석)
 #
 # - [봇 개발 하기](https://github.com/moabogey/docs/wiki/봇개발하기)
+# 
+#
+# ### ⬇️소스코드
 
 #%%
 import requests
